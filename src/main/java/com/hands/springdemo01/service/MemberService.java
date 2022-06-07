@@ -4,11 +4,12 @@ import com.hands.springdemo01.domain.Member;
 import com.hands.springdemo01.repository.MemberRepository;
 import com.hands.springdemo01.repository.MemoryMemberRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
-
+@Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
 
