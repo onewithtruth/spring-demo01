@@ -1,12 +1,10 @@
 package com.hands.springdemo01.repository;
 
 import com.hands.springdemo01.domain.Member;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -21,7 +19,7 @@ public class MemoryMemberRepositoryTest {
     @Test
     public void save() {
         Member member = new Member();
-        member.setName("hojinandspring!!");
+        member.setName("HOJINAndSpring!!");
 
         repository.save(member);
 
