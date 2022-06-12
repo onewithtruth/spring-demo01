@@ -15,11 +15,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.fail;
 
-@SpringBootTest
-@Transactional
+@SpringBootTest //스프링 컨테이너와 테스트 함께 실행
+@Transactional // Test 인 경우 완료후 롤백
 class MemberServiceIntegrationTest {
 
-    @Autowired
+    @Autowired // 필드 인젝션
     MemberService memberService;
     @Autowired
     MemberRepository memberRepository;
