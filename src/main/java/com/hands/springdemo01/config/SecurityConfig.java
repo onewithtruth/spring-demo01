@@ -62,9 +62,9 @@ public class SecurityConfig {
 //
 //        retrun new InMemoryUserDetailsManager(userService);
 //    }
-    @Bean
-    public UserDetailsManager users(UserService userService) {
-        JdbcUserDetailsManager users = new JdbcUserDetailsManager((DataSource) userService);
-
-    }
+//    @Bean
+//    public UserDetailsManager users(UserService userService) {
+//        JdbcUserDetailsManager users = new JdbcUserDetailsManager((DataSource) userService);
+//
+//    }
 }
